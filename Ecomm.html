@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ecommerce Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        Body {
+            background-color: #f7f7f7;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: White;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 70px;
+            margin-left: -10px;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: large;
+            font-weight: 650;
+            font-family: 'Courier New';
+            margin-top: 16px;
+        }
+        
+        li a:hover {
+            text-decoration: underline;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            margin-right: 10%;
+            margin-left: 5%;
+        }
+        
+        .siz:hover {
+            opacity: 0.3;
+        }
+        
+        .siz {
+            height: 300px;
+            width: 300px;
+            opacity: 1;
+        }
+        
+        .middle {
+            transition: .5s ease;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <a><img src="images/clothes.jpg" alt="Company-logo" style="width: 80px;height:40px;margin-top:-16px;"></a>
+        </li>
+        <li><a href="#Men">Men</a></li>
+        <li><a href="#Women">Women</a></li>
+        <li><a href="#Kids">Kids</a></li>
+        <li><a href="#Gifts">Gifts</a></li>
+        <li style="float: right;margin-right:77px;margin-top:1px;">
+            <a><img src="images/shopping_cart.jpg" alt="Company-logo" style="width: 50px;height:40px;margin-top:-16px;"></a>
+        </li>
+
+    </ul>
+    <img src='images/backg.jpeg' style="width:101.4%;height:620px;margin-left:-10px;">
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <h1 style="font-weight: 650;
+    font-family: 'Courier New';">A Few of our Favourites...</h1><br><br>
+
+    <div class="grid-container">
+        <div><img class="siz" src="images/web0.jpg">
+
+        </div>
+
+        <div><img class="siz" src="images/web2.png"></div>
+        <div><img class="siz" src="images/web1.jpg"></div>
+        <div><img class="siz" src="images/web4.png"></div>
+
+    </div>
+
+    <br><br><br><br>
+</body>
+
+</html>
